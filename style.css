@@ -1,0 +1,767 @@
+:root {
+    --pink: #F14E95;
+    --bg: #0A0A0A;
+    --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+}
+
+body {
+    font-size: 1.2rem;
+    font-family: 'Work Sans', sans-serif;
+    min-height: 4000px;
+    /* background:#1F0009; */
+    animation: bgColor 5s infinite alternate-reverse;
+}
+
+[data-name="mojs-shape"] svg {
+    transform:scale(1);
+/*  
+    filter:url('#filter');
+*/
+}
+
+.burst_1 svg line{
+    stroke:#ED4C7D;
+    stroke-opacity:1;
+    stroke-width:.25;
+    stroke-linecap:round;
+    stroke-dasharray: 21 80 12;
+    animation: animFillBurst_1 5s infinite alternate-reverse ease-in-out;
+}
+
+.burst_2 svg line{
+    stroke:#DD0244;
+    stroke-opacity:1;
+    stroke-width:.25;
+    stroke-linecap:round;
+    stroke-dasharray: 21 10 0 10 12;
+    animation: animFillBurst_2 5s infinite alternate-reverse ease-in-out;
+}
+
+.burst_3 svg line{
+    stroke:#58001B;
+    stroke-opacity:1;
+    stroke-width:.25;
+    stroke-dasharray: 21 10 2 100 10 12;
+    stroke-linecap:round;
+    animation: animFillBurst_3 5s infinite alternate-reverse ease-in-out;
+}
+
+@keyframes animFillBurst_1 {
+    from {stroke-width: 1; stroke:#ED4C7D; stroke-dasharray: 21 80 12 }
+    to {stroke-width: 3; stroke:#85A1E1; stroke-dasharray: 221 8 12}
+}
+
+@keyframes animFillBurst_2 {
+    from {stroke-width: .5; stroke:#DD0244; stroke-dasharray: 21 10 0 10 12 }
+    to {stroke-width: 3; stroke:#4364AF; stroke-dasharray: 21 10 100 10 12 }
+}
+@keyframes animFillBurst_3 {
+    from {stroke-width: .5; stroke:#58001B; stroke-dasharray: 21 10 2 100 10 12; }
+    to {stroke-width: 2; stroke:#0B245F; stroke-dasharray: 21 10 0 10 12; }
+}
+@keyframes bgColor {
+    from {background: #1F0009}
+    to {background: #010716 }
+}
+
+/* SESI OPEN */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("img/Wedding_Black10.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    filter: grayscale();
+}
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    /* background-color: var(--bg); */
+}
+
+.hero h1,
+.hero h4,
+.hero p {
+    text-shadow: var(--shadow);
+}
+
+.hero h1 {
+    font-family: 'Sacramento', cursive;
+    font-size: 6rem;
+}
+
+.hero h4 {
+    font-size: 1.6rem;
+}
+
+.hero p {
+    font-size: 1.4rem;
+}
+
+.hero a {
+    color: var(--pink);
+    background-color: white;
+    box-shadow: var(--shadow);
+}
+
+.hero a:hover {
+    background-color: var(--pink);
+    color: white;
+}
+
+/*NAVBAR*/
+#menu {
+    z-index: 2;
+}
+
+#menu-bar {
+    width: 45px;
+    height: 40px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+}
+
+.bar {
+    height: 5px;
+    width: 100%;
+    background-color: var(--pink);
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+#bar1 {
+    transform: translateY(-4px);
+} 
+
+#bar3 {
+    transform: translateY(4px);
+}  
+
+.nav {
+    transition: 0.3s ease;
+    display: none;
+}  
+
+.nav ul {
+    padding: 0 22px;
+}  
+
+.nav li {
+    list-style: none;
+    padding: 12px 0;
+}  
+
+.nav li a {
+    color:#FFFACD;
+    font-size: 20px;
+    /* font-weight: bold; */
+    text-decoration: none;
+    text-transform: uppercase;
+    /* mix-blend-mode: difference; */
+}  
+
+.nav li a:hover {
+    font-weight: bold;
+}  
+
+.menu-bg, #menu {
+    top: 0;
+    left: 0;
+    position: fixed;
+}  
+
+.menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+    background: radial-gradient(circle, var(--pink), #DC052D);
+    border-radius: 50%;
+    transition: 0.3s ease;
+}  
+
+.change {
+    display: block;
+}  
+
+.change .bar {
+    background-color: white;
+}  
+
+.change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+}  
+
+.change #bar2 {
+    opacity: 0;
+} 
+
+.change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+} 
+
+.change-bg {
+    width: 520px;
+    height: 460px;
+    transform: translate(-60%,-30%);
+}
+
+/* SESI INFO */
+.home {
+    background-image: url("img/Floral_Pattern2.png");
+    background-size: cover;
+    min-height: 100vh;
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+    background-position: center;
+    filter: opacity();
+}
+
+.gallery h2,
+.gifts h2,
+.home h2,
+.info h2,
+.rsvp h2,
+.story h2 {
+    color: var(--pink);
+    font-family: 'Sacramento';
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.home h3 {
+    color: #456;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.home p {
+    color: #678;
+    font-size: 1.1rem;
+}
+
+.home .couple {
+    margin-top: 100px;
+}
+
+.home .couple h3 {
+    font-family: 'Sacramento';
+    font-size: 2.4rem;
+    color: var(--pink);
+}
+
+.home .couple img {
+    width: 100%;
+}
+
+.home .heart {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(65px);
+}
+
+.home .heart::after {
+    animation: pulse 1000ms cubic-bezier(0.9, 0.7, 0.5, 0.9) infinite;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.4);
+        opacity: 0.4;
+    }
+}
+
+.home .heart::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #FFC0CB;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.home .heart i {
+    margin: auto;
+    color: var(--pink);
+}
+
+/* SESI INFO MAPS & DATE */
+.info {
+    background-color: var(--bg);
+    color: white;
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+}
+
+.info .alamat {
+    font-size: 1.1rem;
+}
+
+.info a {
+    border:1px solid var(--pink);
+    background-color:var(--pink);
+    color: white;
+}
+
+.info a:hover {
+    background-color: white;
+    color: var(--pink);
+    border: 1px solid var(--pink);
+}
+
+.info .description {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.info .card {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    color: white !important;
+    border: 1px solid #999;
+}
+
+.info .card-header {
+    border-bottom: 1px solid #999;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.info .card-body {
+    font-size: 1rem;
+}
+
+.info .card-footer {
+    border-top: 1px solid #999;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+/* SESI STORY & GALLERY */
+.gallery,
+.gifts,
+.rsvp,
+.story {
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+}
+
+.gallery span,
+.gifts span,
+.story span {
+    text-transform: uppercase;
+    color: #b3456b;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.gallery p,
+.gifts p,
+.rsvp p,
+.story p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #908790;
+}
+
+.timeline {
+    list-style: none;
+    padding: 1.4rem 0;
+    margin-top: 1rem;
+    position: relative;
+}
+
+.timeline::before {
+    content: '';
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    width: 1px;
+    background-color: #ccc;
+    left: 50%;
+}
+
+.timeline li {
+    margin-top: 1.5rem;
+    position: relative;
+}
+
+.timeline li::after,
+.timeline li::before {
+    content: '';
+    display: table;
+}
+
+.timeline li::after {
+    clear: both;
+}
+
+.timeline li .timeline-image {
+    width: 160px;
+    height: 160px;
+    background-color: #ccc;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.timeline li .timeline-panel {
+    width: 40%;
+    float: left;
+    border: 1px solid #ccc;
+    padding: 2rem;
+    position: relative;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.timeline li .timeline-panel::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    border-top: 15px solid transparent;
+    border-left: 15px solid #ccc;
+    border-right: 0 solid #ccc;
+    border-bottom: 15px solid transparent;
+    top: 80px;
+    right: -15px;
+}
+
+.timeline li .timeline-panel::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    border-top: 14px solid transparent;
+    border-left: 14px solid #fff;
+    border-right: 0 solid #fff;
+    border-bottom: 14px solid transparent;
+    top: 81px;
+    right: -13px;
+}
+
+.timeline li.timeline-inverted .timeline-panel {
+    float: right;
+}
+
+.timeline li.timeline-inverted .timeline-panel::before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+}
+
+.timeline li.timeline-inverted .timeline-panel::after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -13px;
+    right: auto;
+}
+
+.gallery {
+    background-color: #f5f5f5;
+}
+/* SESI RESERVATION */
+.rsvp {
+    background-color: var(--bg);
+}
+
+.rsvp h2 {
+    font-size: 4.5rem;
+}
+
+.rsvp form label,
+.rsvp p {
+    /* display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    flex: 1 0 10rem; */
+    color: white;
+}
+
+.rsvp button {
+    background-color: var(--pink);
+    color: white;
+    border: 1px solid var(--pink);
+    flex: 1 0 5rem;
+    margin-top: 20px;
+}
+
+.rsvp button:hover {
+    background-color: white;
+    color: var(--pink);
+    border: 1px solid white;
+}
+
+/* SESI GIFTS */
+.gifts button {
+    /* height:20px; */
+    /* width:150px; */
+    border:1px solid var(--pink);
+    /* padding:10px; */
+    /* font-size:20px; */
+    /* height:30px; */
+    /* cursor:pointer; */
+    background-color:var(--pink);
+    color: white;
+}
+
+.gifts button:hover {
+    background-color: wheat;
+    color: var(--pink);
+    border: 1px solid var(--pink);
+}
+
+/* FOOTER */
+footer {
+    padding: 3rem;
+    background-color: var(--pink);
+    color: white;
+}
+
+footer a {
+    color: var(--bg);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+}
+
+footer li {
+    list-style: none;
+    display: inline;
+    margin: 0.5rem;
+}
+
+/* AUDIO */
+.audio-icon-wrapper {
+    width: 4rem;
+    height: 4rem;
+    font-size: 4rem;
+    position: fixed;
+    bottom: 2.5rem;
+    right: 2rem;
+    cursor: pointer;
+    color: white;
+    opacity: 0.5rem;
+    mix-blend-mode: difference;
+    animation: rotating 4s linear infinite;
+    transform-origin: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+}
+
+@keyframes rotating {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* MEDIA QUERY */
+/* Extra large */
+@media(max-width: 1200px) {
+    .home .heart {
+        transform: translateX(-50%) translateY(45px);
+    }
+}
+
+/* Laptop */
+@media(max-width: 992px) {
+    .hero::before,
+    html {
+        font-size: 75%;
+    }
+    .simply-countdown > .simply-section {
+        padding: 70px;
+    }
+    .home .heart {
+        display: none;
+    }
+    .timeline::before {
+        left: 60px;
+    }
+    .timeline li .timeline-image {
+        left: 15px;
+        margin-left: 45px;
+        top: 16px;
+    }
+    .timeline li .timeline-panel {
+        width: calc((100% - 200px));
+        float: right;
+    }
+    .timeline li .timeline-panel::before {
+        border-left-width: 0;
+        border-right-width: 15px;
+        left: -15px;
+        right: auto;
+    }
+    .timeline li .timeline-panel::after {
+        border-left-width: 0;
+        border-right-width: 14px;
+        left: -13px;
+        right: auto;
+    }
+}
+
+/* Tablet */
+@media(max-width: 768px) {
+    html {
+        font-size: 65%;
+    }
+    .simply-countdown > .simply-section {
+        padding: 60px;
+        margin: 5px;
+    }
+    .mynavbar .nav-link {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .sticky-top {
+        overflow: hidden;
+    }
+    .timeline li .timeline-image {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+/* Mobile Phone */
+@media(max-width: 576px) {
+    html {
+        font-size: 60%;
+    }
+    .simply-countdown > .simply-section {
+        padding: 25px;
+        margin: 3px;
+    }
+    .mynavbar .nav-link {
+        font-size: 1rem;
+        text-align: center;
+    }
+    .timeline li .timeline-image {
+        width: 80px;
+        height: 80px;
+    }
+    .timeline li .timeline-panel {
+        width: 60%;
+        transform: translateX(-20px);
+    }
+    .timeline li .timeline-panel::before {
+        top: 30px;
+    }
+    .timeline li .timeline-panel::after {
+        top: 31px;
+    }
+
+    .rsvp p {
+        position: relative;
+        margin-left: 15px;
+    }
+
+    .rsvp label{
+        max-width: 33%;
+        position: relative;
+        margin-left: 118px;
+    }
+
+    .rsvp input,
+    .rsvp select {
+        max-width: 33%;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .rsvp button {
+        max-width: 33%;
+        position: relative;
+        margin-left: 150px;
+    }
+}
+
+/* Mobile Phone Surface Duo */
+@media(max-width: 540px) {
+    .rsvp label{
+        margin-left: 178px;
+    }
+
+    .rsvp button {
+        margin-left: 243px;
+    }
+}
+
+/* Mobile i-Phone 14 Pro Max */
+@media(max-width: 430px) {
+    .rsvp label{
+        margin-left: 138px;
+    }
+
+    .rsvp button {
+        margin-left: 178px;
+    }
+}
+
+/* Mobile i-Phone XR */
+@media(max-width: 414px) {
+    .rsvp label{
+        margin-left: 135px;
+    }
+
+    .rsvp button {
+        margin-left: 175px;
+    }
+}
+
+/* Mobile i-Phone 12 Pro */
+@media(max-width: 390px) {
+    .rsvp label{
+        margin-left: 128px;
+    }
+
+    .rsvp button {
+        margin-left: 165px;
+    }
+}
+
+/* Mobile i-Phone SE */
+@media(max-width: 375px) {
+    .rsvp label{
+        margin-left: 123px;
+    }
+
+    .rsvp button {
+        margin-left: 155px;
+    }
+}
+
+/* Galaxy Fold (Max-Width: 280): Cacat Story Timeline & RSVP */
