@@ -244,7 +244,7 @@ body {
 
 .home p {
     color: #678;
-    font-size: 1.1rem;
+    font-size: 1.0rem;
 }
 
 .home .couple {
@@ -253,7 +253,7 @@ body {
 
 .home .couple h3 {
     font-family: 'Sacramento';
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     color: var(--pink);
 }
 
@@ -592,6 +592,13 @@ footer li {
 @media(max-width: 1200px) {
     .home .heart {
         transform: translateX(-50%) translateY(45px);
+    }
+}
+
+/* Nest Hub */
+@media(max-width: 1024px) {
+    .home .couple h3 {
+        font-size: 1.8rem;
     }
 }
 
