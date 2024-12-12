@@ -454,7 +454,7 @@ body {
 
 @media(max-width: 2400px) {
     .carousel-inner img {
-        width: 420px;
+        width: 410px;
     }
 
     .carousel-indicators img {
@@ -464,17 +464,11 @@ body {
 
 @media(max-width: 1080px) {
     .carousel-inner img {
-        width: 410px;
+        width: 400px;
     }
 
     .carousel-indicators img {
         width: 35px;
-    }
-}
-
-@media(max-width: 414px) {
-    .carousel-inner img {
-        width: 400px;
     }
 }
 
