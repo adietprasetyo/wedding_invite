@@ -452,13 +452,19 @@ body {
     border: 2px solid var(--pink);
 }
 
-@media(max-width: 430px) {
+@media(max-width: 441px) {
     .carousel-inner img {
-        width: 415px;
+        width: 420px;
     }
 
     .carousel-indicators img {
         width: 35px;
+    }
+}
+
+@media(max-width: 430px) {
+    .carousel-inner img {
+        width: 415px;
     }
 }
 
