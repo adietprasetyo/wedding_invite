@@ -452,7 +452,7 @@ body {
     border: 2px solid var(--pink);
 }
 
-@media(max-width: 441px) {
+@media(max-width: 1080px) {
     .carousel-inner img {
         width: 420px;
     }
