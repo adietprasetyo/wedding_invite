@@ -474,7 +474,7 @@ body {
 
 @media(max-width: 495px) {
     .carousel-inner img {
-        width: 450px;
+        width: 445px;
     }
 }
 
