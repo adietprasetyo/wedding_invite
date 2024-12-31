@@ -472,39 +472,15 @@ body {
     }
 }
 
+@media(max-width: 510px) {
+    .carousel-inner img {
+        width: 495px;
+    }
+}
+
 @media(max-width: 495px) {
     .carousel-inner img {
         width: 480px;
-    }
-}
-
-@media(max-width: 480px) {
-    .carousel-inner img {
-        width: 465px;
-    }
-}
-
-@media(max-width: 465px) {
-    .carousel-inner img {
-        width: 450px;
-    }
-}
-
-@media(max-width: 450px) {
-    .carousel-inner img {
-        width: 435px;
-    }
-}
-
-@media(max-width: 435px) {
-    .carousel-inner img {
-        width: 420px;
-    }
-}
-
-@media(max-width: 420px) {
-    .carousel-inner img {
-        width: 405px;
     }
 }
 
