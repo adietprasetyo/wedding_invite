@@ -496,6 +496,12 @@ body {
     }
 }
 
+@media(max-width: 330px) {
+    .carousel-inner img {
+        width: 315px;
+    }
+}
+
 /* SESI RESERVATION */
 .rsvp {
     background-color: var(--bg);
