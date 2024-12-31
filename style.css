@@ -474,19 +474,19 @@ body {
 
 @media(max-width: 360px) {
     .carousel-inner img {
-        width: 345px;
+        width: 340px;
     }
 }
 
 @media(max-width: 345px) {
     .carousel-inner img {
-        width: 325px;
+        width: 320px;
     }
 }
 
 @media(max-width: 330px) {
     .carousel-inner img {
-        width: 315px;
+        width: 310px;
     }
 }
 
