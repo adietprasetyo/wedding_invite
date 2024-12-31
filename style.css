@@ -472,6 +472,7 @@ body {
     }
 }
 
+/* Carousel: XIAOMI Redmi Note 10S */
 @media(max-width: 495px) {
     .carousel-inner img {
         width: 245px;
