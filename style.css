@@ -474,25 +474,25 @@ body {
 
 @media(max-width: 495px) {
     .carousel-inner img {
-        width: 285px;
+        width: 270px;
     }
 }
 
 @media(max-width: 360px) {
     .carousel-inner img {
-        width: 270px;
+        width: 255px;
     }
 }
 
 @media(max-width: 345px) {
     .carousel-inner img {
-        width: 255px;
+        width: 240px;
     }
 }
 
 @media(max-width: 330px) {
     .carousel-inner img {
-        width: 240px;
+        width: 225px;
     }
 }
 
