@@ -472,6 +472,12 @@ body {
     }
 }
 
+@media(max-width: 435px) {
+    .carousel-inner img {
+        width: 420px;
+    }
+}
+
 @media(max-width: 420px) {
     .carousel-inner img {
         width: 405px;
