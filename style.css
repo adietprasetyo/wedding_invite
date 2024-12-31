@@ -480,19 +480,19 @@ body {
 
 @media(max-width: 360px) {
     .carousel-inner img {
-        width: 340px;
+        width: 315px;
     }
 }
 
 @media(max-width: 345px) {
     .carousel-inner img {
-        width: 320px;
+        width: 300px;
     }
 }
 
 @media(max-width: 330px) {
     .carousel-inner img {
-        width: 310px;
+        width: 285px;
     }
 }
 
