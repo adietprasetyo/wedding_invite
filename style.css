@@ -474,18 +474,6 @@ body {
 
 @media(max-width: 495px) {
     .carousel-inner img {
-        width: 355px;
-    }
-}
-
-@media(max-width: 360px) {
-    .carousel-inner img {
-        width: 340px;
-    }
-}
-
-@media(max-width: 345px) {
-    .carousel-inner img {
         width: 320px;
     }
 }
