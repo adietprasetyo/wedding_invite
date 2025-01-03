@@ -475,25 +475,25 @@ body {
 /* Carousel: XIAOMI Redmi Note 10S */
 @media(max-width: 495px) {
     .carousel-inner img {
-        width: 250px;
+        width: 255px;
     }
 }
 
 @media(max-width: 360px) {
     .carousel-inner img {
-        width: 230px;
+        width: 235px;
     }
 }
 
 @media(max-width: 345px) {
     .carousel-inner img {
-        width: 215px;
+        width: 220px;
     }
 }
 
 @media(max-width: 330px) {
     .carousel-inner img {
-        width: 200px;
+        width: 205px;
     }
 }
 
